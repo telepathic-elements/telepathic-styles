@@ -1063,7 +1063,7 @@ label.checktext input:checked + span {
     background: #2F3E9E;
 }
 
-.blue-button, .red-button, .green-button {
+.blue-button, .red-button, .green-button .yellow-button{
     border-radius: 4px;
     font-weight: bold;
     color: white;
@@ -1080,11 +1080,11 @@ label.checktext input:checked + span {
     transition: border .2s, background .2s, transform .2s, color .2s;
 }
 
-.blue-button:hover, .red-button:hover, .green-button:hover {
+.blue-button:hover, .red-button:hover, .green-button:hover, .yellow-button:hover{
     transform: scale(1.03);
 }
 
-.blue-button:active, .red-button:active, .green-button:active, .blue-button.active, .red-button.active, .green-button.active {
+.blue-button:active, .red-button:active, .green-button:active, .yellow-button:active, .blue-button.active, .red-button.active, .green-button.active {
     box-shadow: none;
     border-color: black;
     color: black;
@@ -1106,20 +1106,34 @@ label.checktext input:checked + span {
     border-color: #00756a;
 }
 
+.yellow-button {
+  background: #F9FD6D;
+  border-color:black;
+}
+
 .rounded-button {
     border: none;
     cursor: pointer;
+    border-radius: 100%;
+    color: white;
+    height: 52px;
+    width:52px;
+    font-size: 2rem;
+    padding: 1rem;
+    /*
     height: 56px;
     width: 56px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
-    border-radius: 100%;
+    
     z-index: 10;
-    font-size: 30px;
+    
     line-height: 56px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    color: white;
-    background: #ba174e;
+    
     display: block;
+    */
 }
 
 .paper {
