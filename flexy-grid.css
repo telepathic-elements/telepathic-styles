@@ -1,0 +1,36 @@
+/**
+    Simple grid based layout with flexbox elements
+**/
+body, article {
+    display: grid;    
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10% 80% 10%;
+}
+
+header {
+    grid-column: span 12;
+    display: flex;
+    align-content: center;
+    font-size: 1.0rem;
+}
+
+main {
+    grid-column: span 10;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10% 80% 10%;
+    font-size: 1.0rem;
+}
+
+aside {
+    grid-column: span 2;
+    align-content: left;
+    font-size: 0.5rem;
+}
+
+footer {
+    grid-column: span 12;
+    display: flex;
+    align-content: center;
+    font-size: 0.5rem;
+}
+
